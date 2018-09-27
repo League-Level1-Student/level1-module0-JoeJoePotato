@@ -13,6 +13,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 public class PhotoQuiz {
 
@@ -22,18 +23,21 @@ public class PhotoQuiz {
                 quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // This will make sure the program exits when you close the window
 
 		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image Address”)
-
+String uno="http://imgs.xkcd.com/comics/beauty.png";
 		// 2. create a variable of type "Component" that will hold your image
-
+JPanel jeff=new JPanel();
+Component comp;
 		// 3. use the "createImage()" method below to initialize your Component
-
+comp=(createImage(uno));
 		// 4. add the image to the quiz window
-
+jeff.add(comp);
 		// 5. call the pack() method on the quiz window
-
+quizWindow.pack();
 		// 6. ask a question that relates to the image
-
-		// 7. print "CORRECT" if the user gave the right answer
+JLabel ladel=new JLabel();
+ladel.setText("What field do you think this scientist is in?");
+jeff.add(ladel);
+// 7. print "CORRECT" if the user gave the right answer
 
 		// 8. print "INCORRECT" if the answer is wrong
 
