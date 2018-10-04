@@ -30,13 +30,16 @@ Component comp;
 		// 3. use the "createImage()" method below to initialize your Component
 comp=(createImage(uno));
 		// 4. add the image to the quiz window
-jeff.add(comp);
+
 		// 5. call the pack() method on the quiz window
 quizWindow.pack();
-		// 6. ask a question that relates to the image
+		
+// 6. ask a question that relates to the image
 JLabel ladel=new JLabel();
 ladel.setText("What field do you think this scientist is in?");
 jeff.add(ladel);
+jeff.add(comp);
+quizWindow.pack();
 // 7. print "CORRECT" if the user gave the right answer
 
 		// 8. print "INCORRECT" if the answer is wrong
