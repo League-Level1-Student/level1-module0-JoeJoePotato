@@ -28,11 +28,12 @@ public class DuelingButtons implements ActionListener {
 
 	private void createUI() {
 		// 1. Add the panel to the frame
-
+frame.add(panel);
+frame.setVisible(true);
 		// 2. Make the frame visible
 
 		// 3. Set the text of the leftButton to "Click me!"
-
+leftButton.setText("");
 		// 4. Set the text of the rightButton to "Click me!"
 
 		// 5. Add an action listener to the leftButton
